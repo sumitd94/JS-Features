@@ -66,3 +66,39 @@ const callMe = (name) => {
 ```
 Please refer <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">here</a> for more information
 
+## Imports & Exports
+
+In all modern Javascript projects, we ususally split our codes in multiple files so that we can manage them easily.
+To still access functionality in another file , we need to `export` (to make it available) and `import` (to get access).
+
+I will walk you through this with examples, so that it will be clear.
+
+we have two types of exports, `named` and `unnamed (default)`
+
+#### default
+``` JavaScript
+export default ...;
+```
+
+#### named
+``` JavaScript
+export const someName = ...;
+```
+
+We can import `default` exports like 
+``` JavaScript
+import somenameofyourchoice '../path/to/jsfile';
+```
+
+> <b>Note:</b> Here somenameofyourchoice is totally up to you, you can use any name here.
+
+<b>Named Exports</b> have to be imported by their name
+
+``` JavaScript
+import {someName} from '../path/to/jsfile';
+```
+
+One thing here we need to keep in mind is that, in one file we can have only 1 default export and an unlimited number of named exports.
+
+To read more about exports, check <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">here</a> \
+To read more about imports, check <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import">here</a>
