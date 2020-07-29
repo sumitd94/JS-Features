@@ -100,5 +100,7 @@ import {someName} from '../path/to/jsfile';
 
 One thing here we need to keep in mind is that, in one file we can have only 1 default export and an unlimited number of named exports.
 
+> while using the keyword export, if we dont mention default keyword, it will automatically condider it as a named export
+
 To read more about exports, check <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">here</a> \
 To read more about imports, check <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import">here</a>
