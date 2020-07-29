@@ -28,7 +28,7 @@ const callMe = (name) => {
     console.log(name)
 }
 ```
-<b>Important</b> \
+> <b>Important</b>
 When Having <b>No Arguments</b>, we have to use empty parentheses in the function declaration
 
 Example :
